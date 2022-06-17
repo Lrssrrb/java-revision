@@ -1,0 +1,7 @@
+multiple inheritance not supported in Java at class level to prevent ambigty.
+
+Example -> 		suppose 3 classes A,B and C.
+			now B class have a method print(),
+			and C class also have a method print(),
+			now A class extend B and C and call print() method.
+			Now compiler can't understand which it have to call.

@@ -1,0 +1,31 @@
+ClassCastException ->
+				It is a exeption which arrives when we try to store a higher level class object into lower level Class object.
+
+Example -> 
+										C3.java
+
+package test;
+
+public class C3 {
+
+	public static void main(String[] args) {
+		try {
+			Object o = new Object();
+		String s = (String)o;
+			System.out.println(s);
+		} catch (Exception e) {
+			System.out.println(e.getClass());
+		}
+		
+	}
+
+}
+
+
+Output ->	class java.lang.ClassCastException
+
+
+Explain -> 		here I got this Exeption because I am tring to store a "Object" class object o in a "String" class object.
+			But "Object" is the parent class of String class thats why I got this Exeption called "ClassCastException" .
+
+	it is like I am tring to store 20 kg thing into a bag which limit is 10 kg.

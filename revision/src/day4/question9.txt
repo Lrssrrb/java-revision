@@ -1,0 +1,56 @@
+the normal method calls and overloaded method are called early binding.
+the method overriding is called late binding
+
+
+
+
+
+							A.java
+
+package test;
+
+public class A {
+
+	public void mathodA1() {
+		System.out.println("A     A1");
+	}
+}
+
+
+
+
+
+							B.java
+package test;
+
+public class B extends A{
+
+	public void mathodB1() {
+		System.out.println("B     B1");
+	}
+	
+	@Override
+	public void mathodA1() {
+		System.out.println("B     A1");
+	}
+}
+
+
+
+
+
+							C.java
+package test;
+
+public class C {
+
+	public static void main(String[] args) {
+		A a = new A();
+		B b = new B();
+		
+		a.mathodA1();
+		b.mathodB1();
+		b.mathodA1();
+		
+	}
+}

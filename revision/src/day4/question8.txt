@@ -1,0 +1,2 @@
+A marker interface is an interface that has no methods.
+it provide run-time type interface about object for JVM.

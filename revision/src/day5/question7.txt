@@ -1,0 +1,2 @@
+In java we mainly built business application and we need to override equals and hashcode method
+if equality is going to be defined by logical way or via some business logic .

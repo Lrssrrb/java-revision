@@ -1,0 +1,5 @@
+The throw keyword is used inside a function. It is used when it is required to throw an Exception logically.
+The throws keyword is used in the function signature. It is used when the function has some statements that can lead to exceptions.
+
+Syntax of throw keyword includes the instance of the Exception to be thrown.
+Syntax of throws keyword includes the class names of the Exceptions to be thrown.

@@ -1,0 +1,20 @@
+Originally there is no difference b/w "==" and "equals()" because the original equals() method is written like
+
+function equals(Object obj){
+	return this == obj;
+}
+
+but the biggest advantage of equals is that we can override it and make two mathematically uncomparable objects into a logically comparable.
+
+like->
+a.name = lucky;
+a.age = 20;
+
+b.name = lucky;
+b.age = 20;
+
+if we check a==b or a.equals(b) it will be false but we can overridde equals like-
+
+equals(object obj){
+	return this.name == obj.name && this.age == obj.age;
+}

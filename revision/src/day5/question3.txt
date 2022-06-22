@@ -1,0 +1,4 @@
+in hashmap, we store data in key-value pairs.
+where the key has been marked as final and two more fields are there: next and hash.
+A particular index location in the array is referred to as a bucket because it can hold the first element of a LinkedList of entry objects.
+The key object’s hashCode () is required to calculate the index location of the Entry object.

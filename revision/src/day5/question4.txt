@@ -1,0 +1,4 @@
+A set is a well-defined collection of unique objects.
+A set will never contain duplicate elements.
+So HashSet does not allow any duplicates in its output.
+HashSet outputs necessarily need not to be in the same order of its inputs.

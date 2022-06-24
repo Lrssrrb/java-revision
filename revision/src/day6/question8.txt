@@ -1,0 +1,11 @@
+Function can take 2 type parameters		1-input type		2-return type
+Predicate can take only 1 type parameters		1-input type
+
+Return type of Function is any type of value.
+Return type of Predicate is boolean value.
+
+Function has abstract method apply().
+Predicate has abstract method test().
+
+Function can be used to implement conditional checks.
+Predicate can be used to transformation and to the return value.

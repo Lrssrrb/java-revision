@@ -1,0 +1,2 @@
+Comparable in Java is an object to compare itself with another object, whereas Comparator is an object for comparing different objects of different classes.
+Comparable provides the compareTo() method to sort elements in Java whereas Comparator provides compare() method to sort elements in Java.

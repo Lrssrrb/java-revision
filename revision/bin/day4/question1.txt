@@ -1,0 +1,5 @@
+Abstract Class ->
+			It is a restricted class that can not be used to create object.
+
+interface ->
+		It is like a blue print of a class where only the name, access-type, return-type, parameter and parameter-type is maintioned.

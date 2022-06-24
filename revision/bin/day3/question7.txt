@@ -1,0 +1,42 @@
+Is-a 	->	when a class extends another class then this relationship is called Is-a relationship.
+Has-a	->	when a class creates another class object and use that's method then this relationship is called Has-a relationship.
+
+
+Class A{
+	..........................
+}
+
+Class B{
+	..........................
+}
+
+Class C extends A{
+	B obj = new B();
+	..........................
+}
+
+
+C 	Is-a	 	A
+C	has-a		B
+
+
+
+
+
+
+
+Acess Modifiers ->
+				There are 4 types of Acess Modifiers
+				public	protected		default		private
+
+				There are 5 Areas
+				within Class					Within Package		Same package by subclasses
+
+						Outside package by subclasses			Global
+
+highest Areas of each Acess Modifiers
+
+1 ->	public		Global
+2 ->	protected		Outside package by subclasses
+3 ->	default		Same package by subclasses
+4 ->	private		within Class

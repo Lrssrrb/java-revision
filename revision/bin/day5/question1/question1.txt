@@ -1,0 +1,5 @@
+Checked exceptions occur at compile time.
+and Unchecked exceptions occur at runtime.
+
+Checked exceptions can be handled at the time of compilation.
+and Unchecked exceptions cannot be a catch or handle at the time of compilation.

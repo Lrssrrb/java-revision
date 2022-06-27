@@ -1,0 +1,13 @@
+import java.io.IOException;
+import java.nio.file.*;
+import java.util.*;
+class Main {
+public static void main(String[] args) throws IOException {
+Path p = Paths.get("d://a1.txt");
+List<String> list= Files.readAllLines(p);
+System.out.println("Reading from the file");
+for(String line:list) {
+System.out.println(line);
+}
+}
+}

@@ -1,0 +1,5 @@
+Serialization is used to convert an object into a stream of the byte. 
+The byte stream consists of the data of the instance as well as the type of data stored in that instance. 
+Deserialization performs exactly opposite operation. 
+It converts the byte sequence into original object data. During the serialization, 
+when we do not want an object to be serialized we can use a transient keyword.

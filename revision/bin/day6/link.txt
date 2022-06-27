@@ -1,2 +1,2 @@
 My repo	->	https://github.com/Lrssrrb/java-revision/tree/main/revision/src/day6
-Masai repo	->	
+Masai repo	->	https://github.com/masai-course/luckiraj_fw16-367/tree/master/java%20revision/revision/src/day6

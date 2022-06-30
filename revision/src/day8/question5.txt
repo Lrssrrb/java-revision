@@ -1,0 +1,61 @@
+We can join more then 2 tables by ussing multiple join operations.
+Ex. -
+	SELECT columns FROM teble1 JOIN (table2 JOIN table3 ON table3.column3 = table2.column2) ON table1.column1 = table2.column2
+
+
+
+mysql> select * from departments;
++---------------+--------------------------+
+| department_id | department_name          |
++---------------+--------------------------+
+|             1 | Sales                    |
+|             2 | Engineering              |
+|             3 | Human Resources          |
+|             4 | Customer Service         |
+|             5 | Research And Development |
++---------------+--------------------------+
+5 rows in set (0.00 sec)
+
+mysql> select * from office;
++----+----------------------------------------+
+| id | address                                |
++----+----------------------------------------+
+|  1 | 5 Wisteria Lane, Springfield, USA      |
+|  2 | 124 Chestmount Street, Springfield,USA |
+|  3 | 6610 Bronzeway, Springfield, USA       |
+|  4 | 532 Executive Lane, Springfield, USA   |
+|  5 | 10 Meadow View, Springfield, USA       |
++----+----------------------------------------+
+5 rows in set (0.00 sec)
+
+mysql> select * from department_office;
++-----------+---------------+
+| office_id | department_id |
++-----------+---------------+
+|         1 |             1 |
+|         2 |             3 |
+|         3 |             2 |
+|         4 |             4 |
+|         5 |             5 |
+|         2 |             1 |
+|         5 |             1 |
+|         4 |             3 |
++-----------+---------------+
+8 rows in set (0.00 sec)
+
+mysql> SELECT department_name , address from departments JOIN (office JOIN department_office ON department_office.department_id = office.id) ON departments.department_id = department_office.department_id;
++--------------------------+----------------------------------------+
+| department_name          | address                                |
++--------------------------+----------------------------------------+
+| Sales                    | 5 Wisteria Lane, Springfield, USA      |
+| Human Resources          | 6610 Bronzeway, Springfield, USA       |
+| Engineering              | 124 Chestmount Street, Springfield,USA |
+| Customer Service         | 532 Executive Lane, Springfield, USA   |
+| Research And Development | 10 Meadow View, Springfield, USA       |
+| Sales                    | 5 Wisteria Lane, Springfield, USA      |
+| Sales                    | 5 Wisteria Lane, Springfield, USA      |
+| Human Resources          | 6610 Bronzeway, Springfield, USA       |
++--------------------------+----------------------------------------+
+8 rows in set (0.01 sec)
+
+mysql>

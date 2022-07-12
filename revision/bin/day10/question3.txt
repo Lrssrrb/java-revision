@@ -1,0 +1,26 @@
+1. Statement : 
+It is used for accessing your database. 
+Statement interface cannot accept parameters and is useful when using static SQL statements at runtime. 
+If you want to run SQL query only once then this interface is preferred over PreparedStatement. 
+
+Example – 
+
+Statement GFG = con.createStatement();
+GFG.executeUpdate("CREATE TABLE STUDENT(ID NUMBER NOT NULL, NAME VARCHAR)"); 
+
+
+
+
+
+2. PreparedStatement : 
+It is used when you want to use SQL statements many times. 
+The PreparedStatement interface accepts input parameters at runtime. 
+ 
+
+Example –  
+
+PreparedStatement GFG = con.prepareStatement("update STUDENT set NAME = ? where ID = ?");
+  
+GFG.setString(1, "RAM");   
+GFG.setInt(2, 512);     
+GFG.executeUpdate();

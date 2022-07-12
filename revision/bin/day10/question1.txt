@@ -1,0 +1,5 @@
+JDBC or Java DataBase Connectivity is a java API (Application programming interface) to connect and execute the query with the database.
+It is a specification from Sun microsystems thet provides a stenderd protocol for java applications to communicate with various databases.
+
+JDBC is an API used in java programming to intrect with databases.
+The classes and interfaces of JDBC allow the application to send requests made by user to the specific database.

@@ -1,0 +1,14 @@
+ORM stands for Object-Relational Mapping, it is a programming technique that abstracts your code from the database behind it. 
+In plain English, 
+if you are using ORM and a MySQL database, you could switch to PostgreSQL at any time without changing your code. At all.
+
+
+An ORM system has the following advantages over plain JDBC S.N. Advantages -
+
+1 Let business code access objects rather than DB tables. 
+2 Hides details of SQL queries from OO logic. 
+3 Based on JDBC 'under the hood' 
+4 No need to deal with the database implementation. 
+5 Entities are based on business concepts rather than database structure. 
+6 Transaction management and automatic key generation. 
+7 Fast development of the application.

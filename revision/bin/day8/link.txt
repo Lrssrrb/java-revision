@@ -1,0 +1,2 @@
+parsonal		https://github.com/Lrssrrb/java-revision/tree/main/revision/src/day8
+masai			https://github.com/masai-course/luckiraj_fw16-367/tree/master/java%20revision/revision/src/day8

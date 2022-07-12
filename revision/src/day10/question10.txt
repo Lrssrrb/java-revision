@@ -1,0 +1,7 @@
+POJO stands for Plain Old Java Object and POJI stands for Plain Old Java Interface. 
+Entity beans are replaced by POJO (Plain Old Java Object) classes which are simply referred to as entities. 
+In EJB3 entity beans are replaced by POJO which can run outside the EJB container and doesn’t require any special interface.
+
+Generally, a POJO class contains variables and their Getters and Setters. 
+The POJO classes are similar to Beans as both are used to define the objects to increase the readability and re-usability. 
+The only difference between them that Bean Files have some restrictions but, the POJO files do not have any special restrictions.

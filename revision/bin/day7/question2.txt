@@ -1,0 +1,21 @@
+ Write a program to read the content from the abc.txt file using
+BufferedReader.
+
+
+public class Reader {
+
+public static void main(String[]args) throws IOException{
+
+    FileReader in = new FileReader("C:/abc.txt");
+    BufferedReader br = new BufferedReader(in);
+
+    String s;
+ 	while ((s=br.readLine()) != null) {
+     		System.out.println(s);
+  	}
+    in.close();
+
+}
+
+
+

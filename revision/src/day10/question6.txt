@@ -1,0 +1,7 @@
+DriverManager Class
+
+The DriverManager class is responsible for managing the basic service to set of JDBC drivers. 
+It acts as an interface between Java application and drivers. 
+The DriverManager class will attempt to load the driver classes referenced in "jdbc.drivers" system property.
+
+The DriverManager class loads the JDBC drivers to the system property.

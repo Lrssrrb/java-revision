@@ -1,0 +1,46 @@
+mysql> CREATE TABLE departments(department_id int PRIMARY KEY,department_name char(20));
+Query OK, 0 rows affected (0.08 sec)
+
+mysql> CREATE TABLE employees(id int primary key,employee_name char(20),department_id int, foreign key (department_id) References departments(department_id));
+Query OK, 0 rows affected (0.05 sec)
+
+mysql> insert into departments values (1,"Sales");
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into departments values (2,"Engineering");
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into departments values (3,"Human Resources");
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into departments values (4,"Customer Service");
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into departments values (5,"Research And Development");
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into employees values (1,"Homer Simpson",4);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into employees values (2,"Ned Flanders",1);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into employees values (3,"Barney Gumble",5);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into employees values (4,"Clancy Wiggum",3);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into employees values (5,"Moe Syzslak",null);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> select id,employee_name,department_name from employees join departments ON departments.department_id = employees.department_id;
++----+---------------+--------------------------+
+| id | employee_name | department_name          |
++----+---------------+--------------------------+
+|  1 | Homer Simpson | Customer Service         |
+|  2 | Ned Flanders  | Sales                    |
+|  3 | Barney Gumble | Research And Development |
+|  4 | Clancy Wiggum | Human Resources          |
++----+---------------+--------------------------+
+4 rows in set (0.01 sec)

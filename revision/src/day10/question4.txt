@@ -1,0 +1,27 @@
+execute()
+
+Description: The method used for all types of SQL statements, and that is, returns a Boolean value of TRUE or FALSE.
+Return type: This method return a Boolean value. TRUE indicates that the query returned a Result Set object and FALSE indicate returned an int value or returned nothing.
+Usage: This method is used to execute  Both select and non-select queries.
+Example: All SQL statements.
+
+
+
+
+execute Query() 
+
+Description: Now this method executes statements that return a result set by fetching some data from the database.
+Usage: This method is used to execute a select query.
+Return type: This method returns a Result Set object which contains the result returned by a query.
+One of its examples that are widely common: ‘SELECT’
+
+
+
+execute Update()
+
+Description: This method is used for the execution of DML statement(INSERT, UPDATE and DELETE) which is return int value, count of the affected rows.
+Usage: This method is used to execute the non-select query. This method is used to execute select and non-select queries.
+Return type: An integer value that represents a number of rows affected by the query. This will be 0 for statements that are returning nothing.
+Example:
+DML->INSERT , UPDATE and DELETE
+DDL-> CREATE, ALTER

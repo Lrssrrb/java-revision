@@ -1,0 +1,2 @@
+SQL JOIN command is a command which we use to join tables .
+we need to join tables when we want meaningfull data from multiple table.

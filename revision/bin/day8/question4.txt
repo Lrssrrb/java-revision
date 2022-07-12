@@ -1,0 +1,2 @@
+In INNER JOIN we will get all the data which have matching values in both tables.
+In LEFT JOIN we will get all the data from left tables and matching values from right tables.
